@@ -2,21 +2,21 @@ spring:
   application:
     name: consumer-service-ribbon
   zipkin:
-    base-url: http://zipkin-service-3000:8080
+    base-url: http://mscloud-zipkin-service:8080
   boot:
     admin:
       client:
-        url: http://admin-service-2000:2000
+        url: http://mscloud-admin-service:2000
 
 server:
   port: 9000
 
 eureka:
   instance:
-    hostname: consumer-service-ribbon-9000
+    hostname: mscloud-consumer-service-ribbon
   client:
     service-url:
-      defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
+      defaultZone: http://mscloud-eureka-server:7000/eureka/, http://mscloud-eureka-server:7001/eureka/, http://mscloud-eureka-server:7002/eureka/
 
 management:
   endpoints:

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>consumer-feign</artifactId>
+    <artifactId>consumer-service-feign</artifactId>
 
     <dependencies>
         <!-- spring boot -->

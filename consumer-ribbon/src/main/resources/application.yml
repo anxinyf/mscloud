@@ -3,7 +3,14 @@ spring:
     name: consumer-ribbon-feign
   cloud:
     config:
-      uri: http://config-service-8888:8888
+      uri: http://mscloud-config-service:8888
       name: consumer-service-ribbon
       label: master
       profile: dev
+
+eureka:
+  instance:
+    hostname: mscloud-consumer-service-ribbon
+  client:
+    service-url:
+      defaultZone: http://mscloud-eureka-server:7000/eureka/, http://mscloud-eureka-server:7001/eureka/, http://mscloud-eureka-server:7002/eureka/
