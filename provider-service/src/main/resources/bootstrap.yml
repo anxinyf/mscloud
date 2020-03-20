@@ -1,6 +1,6 @@
 spring:
   application:
-    name: provider-service
+    name: mscloud-provider-service
   cloud:
     config:
       uri: http://mscloud-config-service:8888

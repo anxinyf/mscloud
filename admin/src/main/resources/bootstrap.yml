@@ -1,9 +1,10 @@
 spring:
   application:
-    name: admin-service
+    name: mscloud-admin-service
   cloud:
     config:
       uri: http://mscloud-config-service:8888
       name: admin-service
       label: master
       profile: dev
+
