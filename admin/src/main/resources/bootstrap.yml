@@ -1,10 +1,17 @@
 spring:
   application:
-    name: mscloud-admin-service
+    name: admin-service
   cloud:
     config:
       uri: http://mscloud-config-service:8888
-      name: admin-service
+      name: mscloud-admin-service
       label: master
       profile: dev
 
+eureka:
+  instance:
+    hostname: mscloud-admin-service
+  client:
+    service-url:
+      # k8s
+      defaultZone: http://mscloud-eureka-service:7000/eureka/

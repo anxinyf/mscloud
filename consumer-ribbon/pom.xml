@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mscloud-consumer-ribbon-feign</artifactId>
+    <artifactId>consumer-ribbon-feign</artifactId>
 
 
     <dependencies>

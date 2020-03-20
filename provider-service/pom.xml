@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mscloud-provider-service</artifactId>
+    <artifactId>provider-service</artifactId>
 
 
     <dependencies>

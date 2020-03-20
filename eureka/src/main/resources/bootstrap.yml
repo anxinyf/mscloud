@@ -1,7 +1,7 @@
 # 使用config 配置中心, 其他的微服也是一样，指定远端的配置文件即可
 spring:
   application:
-    name: mscloud-eureka-server
+    name: eureka-server
   cloud:
     config:
       # deploy in k8s cluster

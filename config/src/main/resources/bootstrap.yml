@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mscloud-config-service
+    name: config-service
   zipkin:
     base-url: http://mscloud-zipkin-service:8080
   boot:
@@ -16,7 +16,7 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/anxinyf/mscloud-config.git
+          uri: https://github.com/xiliangMa/mscloud-config.git
           search-paths: mscloud
           username:
           password:

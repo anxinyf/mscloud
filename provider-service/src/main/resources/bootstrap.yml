@@ -1,9 +1,20 @@
 spring:
   application:
-    name: mscloud-provider-service
+    name: provider-service
   cloud:
     config:
       uri: http://mscloud-config-service:8888
       name: provider-service
       label: master
       profile: dev
+
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: mscloud-provider-service
+  client:
+    service-url:
+      # k8s
+      defaultZone: http://mscloud-eureka-service:7000/eureka/

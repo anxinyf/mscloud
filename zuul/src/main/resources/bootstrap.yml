@@ -1,9 +1,17 @@
 spring:
   application:
-    name: mscloud-zuul-service
+    name: zuul-service
   cloud:
     config:
       uri: http://mscloud-config-service:8888
       name: zuul-service
       label: master
       profile: dev
+
+eureka:
+  instance:
+    hostname: mscloud-zuul-service
+  client:
+    service-url:
+      # k8s
+      defaultZone: http://mscloud-eureka-service:7000/eureka/

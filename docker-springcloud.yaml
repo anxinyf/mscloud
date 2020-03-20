@@ -1,0 +1,16 @@
+docker run -p 7000:7000 --restart=unless-stopped --name mscloud-eureka -d -v /tmp/mscloud/eureka:/mscloud/eureka anxin888/mscloud-eureka:latest
+
+docker run -p 8888:8888 --restart=unless-stopped --name mscloud-config -d -v /tmp/mscloud/config:/mscloud/config anxin888/mscloud-config:latest
+
+docker run -p 2000:2000 --restart=unless-stopped --name mscloud-admin -d -v /tmp/mscloud/admin:/mscloud/admin anxin888/mscloud-admin:latest
+
+docker run -p 8000:8000 --restart=unless-stopped --name mscloud-provider -d -v /tmp/mscloud/provider:/mscloud/provider xiliangma/mscloud-provider:latest
+
+docker run -p 9001:9001 --restart=unless-stopped --name mscloud-consumer-feign -d -v /tmp/mscloud/consumer-feign:/mscloud/consumer-feign anxin888/mscloud-consumer-feign:latest
+
+docker run -p 5000:5000 --restart=unless-stopped --name mscloud-zuul -d -v /tmp/mscloud/zuul:/mscloud/zuul anxin888/mscloud-zuul:latest
+
+docker run -p 3000:3000 -p 8080:8080 --restart=unless-stopped --name mscloud-zipkin -d -v /tmp/mscloud/zipkin:/mscloud/zipkin anxin888/mscloud-zipkin:latest
+
+
+

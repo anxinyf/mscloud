@@ -1,9 +1,17 @@
 spring:
   application:
-    name: mscloud-consumer-service-feign
+    name: consumer-service-feign
   cloud:
     config:
       uri: http://mscloud-config-service:8888
       name: consumer-service-feign
       label: master
       profile: dev
+
+eureka:
+  instance:
+    hostname: mscloud-consumer-service-service
+  client:
+    service-url:
+      # k8s
+      defaultZone: http://mscloud-eureka-service:7000/eureka/
