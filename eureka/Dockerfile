@@ -1,8 +1,8 @@
 FROM java:8-jre
-MAINTAINER xiliangMa <xiliangMa@outlook.com>
+MAINTAINER anxinyf
 
-ADD ./target/eureka-0.0.1-SNAPSHOT.jar /app/
+ADD ./target/eureka-server-0.0.1-SNAPSHOT.jar /app.jar
 
-CMD ["java", "-Xmx200m", "-jar", "/app/eureka-0.0.1-SNAPSHOT.jar", "--spring.profiles.active=dev"]
+CMD ["java", "-Xmx200m", "-jar", "/app.jar", "--spring.profiles.active=dev"]
 
 EXPOSE 7000

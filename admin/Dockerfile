@@ -1,8 +1,8 @@
 FROM java:8-jre
-MAINTAINER xiliangMa <xiliangMa@outlook.com>
+MAINTAINER anxinyf
 
-ADD ./target/admin-0.0.1-SNAPSHOT.jar /app/
+ADD ./target/admin-service-0.0.1-SNAPSHOT.jar /app.jar
 
-CMD ["java", "-Xmx200m", "-jar", "/app/admin-0.0.1-SNAPSHOT.jar", "--spring.profiles.active=dev"]
+CMD ["java", "-Xmx200m", "-jar", "/app.jar", "--spring.profiles.active=dev"]
 
 EXPOSE 2000

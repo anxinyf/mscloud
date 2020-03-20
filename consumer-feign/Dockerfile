@@ -1,8 +1,8 @@
 FROM java:8-jre
-MAINTAINER xiliangMa <xiliangMa@outlook.com>
+MAINTAINER anxinyf
 
-ADD ./target/consumer-feign-0.0.1-SNAPSHOT.jar /app/
+ADD ./target/consumer-service-feign-0.0.1-SNAPSHOT.jar /app.jar
 
-CMD ["java", "-Xmx200m", "-jar", "/app/consumer-feign-0.0.1-SNAPSHOT.jar", "--spring.profiles.active=dev"]
+CMD ["java", "-Xmx200m", "-jar", "/app.jar", "--spring.profiles.active=dev"]
 
 EXPOSE 9001

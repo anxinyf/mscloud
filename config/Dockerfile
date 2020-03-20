@@ -1,8 +1,8 @@
 FROM java:8-jre
-MAINTAINER xiliangMa <xiliangMa@outlook.com>
+MAINTAINER anxinyf
 
-ADD ./target/config-0.0.1-SNAPSHOT.jar /app/
+ADD ./target/config-service-0.0.1-SNAPSHOT.jar /app.jar
 
-CMD ["java", "-Xmx200m", "-jar", "/app/config-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-Xmx200m", "-jar", "/app.jar"]
 
 EXPOSE 8888
